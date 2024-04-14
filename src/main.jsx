@@ -9,6 +9,8 @@ import Root from './Root.jsx';
 import ErrorPage from './ErrorPage.jsx';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
+import FirebaseProvider from './FirebaseProvider/FirebaseProvider';
+import AllProperties from './Pages/AllProperties';
 
 const router = createBrowserRouter([
   {
@@ -28,15 +30,22 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register></Register>
+      },
+      {
+        path: '/properties',
+        element: <AllProperties></AllProperties>,
+        loader: () => fetch('/data.json'),
       }
 
-  
+
     ]
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
-    <RouterProvider router={router} />
+    <FirebaseProvider>
+      <RouterProvider router={router} />
+    </FirebaseProvider>
   </>
 )

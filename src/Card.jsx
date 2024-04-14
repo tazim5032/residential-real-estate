@@ -5,7 +5,7 @@ const Card = ({ card }) => {
         area, location, facilities, image_url } = card;
     return (
         <div className="card bg-blue-50 card-compact bg-base-100 shadow-xl shadow-blue-200 hover:scale-105">
-            <figure className=""><img className="h-[200px] w-[200px] sm:w-[300px] rounded-xl" src={image_url} /></figure>
+            <figure className="mt-4"><img className="h-[200px] w-[200px] sm:w-[300px] rounded-xl" src={image_url} /></figure>
             <div className="card-body">
                 <h2 className="card-title">{estate_title}</h2>
 
