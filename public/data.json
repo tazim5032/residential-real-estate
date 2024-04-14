@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "estate_title": "Luxury Villa with Ocean View",
+      "segment_name": "Premium",
+      "description": "Experience luxury living with breathtaking ocean views from every room in this exquisite Malibu estate. Immerse yourself in the epitome of coastal elegance, where every detail is designed to elevate your lifestyle to new heights of opulence. From the expansive living spaces to the stunning infinity pool overlooking the Pacific, this villa offers a sanctuary of tranquility and sophistication.",
+      "price": "$2,500,000",
+      "status": "Sale",
+      "area": "5000 sq ft",
+      "location": "Malibu, California",
+      "facilities": ["Living Room", "Swimming Pool", "Kitchen", "Gym", "Home Theater"],
+      "image_url": "https://i.ibb.co/LS3RBqJ/Capture.png"
+    },
+    {
+      "id": 2,
+      "estate_title": "Modern Downtown Loft",
+      "segment_name": "Urban",
+      "description": " Discover urban living at its finest in this chic loft apartment nestled in the vibrant heart of New York City. Boasting sleek contemporary design and expansive city views, this space redefines luxury in the bustling metropolis. With amenities such as a fitness center and concierge service, every aspect of cosmopolitan living is at your fingertips, promising an unparalleled urban lifestyle.",
+      "price": "$3,500/month",
+      "status": "Rent",
+      "area": "1200 sq ft",
+      "location": "New York City, New York",
+      "facilities": ["Open Floor Plan", "Balcony", "Fitness Center", "Concierge Service"],
+      "image_url": "https://i.ibb.co/FKSb0GC/Capture.png"
+    },
+    {
+      "id": 3,
+      "estate_title": "Cozy Suburban Home",
+      "segment_name": "Family",
+      "description": "Step into the warmth and charm of suburban living with this quaint family home tucked away in a peaceful neighborhood. Perfect for creating cherished memories and embracing a sense of community, this home offers a retreat from the hustle and bustle of city life. With a spacious backyard and inviting fireplace, it's the ideal setting for cozy family gatherings and tranquil evenings.",
+      "price": "$400,000",
+      "status": "Sale",
+      "area": "2000 sq ft",
+      "location": "Suburbia, USA",
+      "facilities": ["Backyard", "Garage", "Playroom", "Fireplace"],
+      "image_url": "https://i.ibb.co/PhFcyKb/Capture.png"
+    },
+    {
+      "id": 4,
+      "estate_title": "Sunny Beachfront Condo",
+      "segment_name": "Beach",
+      "description": " Indulge in the ultimate beachfront lifestyle with this sun-drenched condo in the vibrant city of Miami Beach. Wake up to panoramic views of the ocean and soak in the sun on your private balcony, or take a refreshing dip in the pool just steps away from the sandy shores. With amenities like beach access and tennis courts, every day feels like a vacation in paradise.",
+      "price": "$1,200,000",
+      "status": "Sale",
+      "area": "1500 sq ft",
+      "location": "Miami Beach, Florida",
+      "facilities": ["Beach Access", "Pool", "Tennis Courts", "Fitness Center"],
+      "image_url": "https://i.ibb.co/sWFYzXP/Capture1.png"
+    },
+    {
+      "id": 5,
+      "estate_title": "Rustic Mountain Cabin",
+      "segment_name": "Rural",
+      "description": "Escape to the serenity of the mountains in this charming rustic cabin nestled amidst the breathtaking beauty of Aspen, Colorado. Surrounded by towering pines and rugged peaks, this cozy retreat offers a peaceful sanctuary away from the chaos of city life. Whether you're curled up by the wood-burning stove or exploring nearby hiking trails, this cabin is the perfect haven for nature lovers.",
+      "price": "$300,000",
+      "status": "Sale",
+      "area": "1000 sq ft",
+      "location": "Aspen, Colorado",
+      "facilities": ["Wood-Burning Stove", "Deck", "Hiking Trails Nearby"],
+      "image_url": "https://i.ibb.co/1q15fyq/Capture2.png"
+    },
+    {
+      "id": 6,
+      "estate_title": "City Center Penthouse",
+      "segment_name": "Luxury",
+      "description": " Elevate your urban experience in this luxurious penthouse perched high above the bustling streets of San Francisco. With sweeping city views and lavish amenities like a private terrace and spa bathroom, this residence epitomizes modern luxury living. Whether you're entertaining guests or unwinding in opulent surroundings, this penthouse offers a lifestyle of unparalleled sophistication.",
+      "price": "$5,000,000",
+      "status": "Sale",
+      "area": "4000 sq ft",
+      "location": "San Francisco, California",
+      "facilities": ["Private Terrace", "Gourmet Kitchen", "Spa Bathroom"],
+      "image_url": "https://i.ibb.co/bLtTdn8/Capture7.png"
+    },
+    {
+      "id": 7,
+      "estate_title": "Historic Countryside Estate",
+      "segment_name": "Heritage",
+      "description": " Step back in time and immerse yourself in the rich heritage of Tuscany with this grand countryside estate. Set amidst sprawling vineyards and manicured gardens, this historic property exudes timeless elegance and old-world charm. From the wine cellar to the pool house, every corner of this estate tells a story of luxury and refinement, offering a glimpse into a bygone era of aristocratic living.",
+      "price": "$3,800,000",
+      "status": "Sale",
+      "area": "6000 sq ft",
+      "location": "Tuscany, Italy",
+      "facilities": ["Vineyard", "Pool House", "Gardens", "Wine Cellar"],
+      "image_url": "https://i.ibb.co/sjymvr8/Capture4.png"
+    },
+    {
+      "id": 8,
+      "estate_title": "Urban Studio Apartment",
+      "segment_name": "Compact",
+      "description": "Embrace the energy of city living in this compact studio apartment nestled within the vibrant streets of Brooklyn, New York. Designed with the needs of young professionals in mind, this space offers a seamless blend of style and functionality. With a modern kitchen, convenient laundry facilities, and bike storage, every aspect of urban living is catered to, ensuring a comfortable and convenient lifestyle in the heart of the city.",
+      "price": "$1,800/month",
+      "status": "Rent",
+      "area": "600 sq ft",
+      "location": "Brooklyn, New York",
+      "facilities": ["Modern Kitchen", "Laundry Facilities", "Bike Storage"],
+      "image_url": "https://i.ibb.co/wwyKB02/Capture5.png"
+    },
+    {
+      "id": 9,
+      "estate_title": "Lakefront Retreat",
+      "segment_name": "Scenic",
+      "description": "Escape the hustle and bustle of everyday life and discover serenity in this captivating lakefront retreat overlooking the pristine waters of Lake Tahoe, Nevada. Surrounded by picturesque views and enveloped in tranquility, this sanctuary offers the perfect balance of relaxation and adventure. Whether you're unwinding on the deck, roasting marshmallows by the fire pit, or setting sail from your private dock, this retreat promises endless opportunities for rejuvenation and exploration.",
+      "price": "$750,000",
+      "status": "Sale",
+      "area": "2500 sq ft",
+      "location": "Lake Tahoe, Nevada",
+      "facilities": ["Dock", "Deck", "Fire Pit", "Boat Slip"],
+      "image_url": "https://i.ibb.co/VDfrrJ3/Capture6.png"
+    }
+  ]
+  
