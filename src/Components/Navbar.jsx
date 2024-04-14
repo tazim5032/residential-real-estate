@@ -1,6 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
+import UseAuth from "../Hook/UseAuth";
 
 const Navbar = () => {
+
+    const { logout, user } = UseAuth();
 
     return (
         <div className="navbar bg-base-100 sans">
@@ -49,13 +52,34 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-1 text-center">
+                {
+                    user?.email ? <div className="dropdown dropdown-end">
+                        <label tabIndex={0}
+                            className="btn btn-ghost btn-circle avatar">
+                            <div className="w-10 rounded-full">
+                                <img src="https://i.ibb.co/sjymvr8/Capture4.png" />
+                            </div>
+                        </label>
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3
+                        z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li>
+                                <button className="btn btn-sm btn-ghost">Tazim</button>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={logout}
+                                 className="btn btn-sm btn-ghost">Logout</button>
+                            </li>
+                        </ul>
+                    </div>
+                        :
+                        <Link to="/login">
+                            <button className="btn text-white bg-black">Login</button>
+                        </Link>
+                }
+
+
                 
-                <Link to="/login">
-                    <button className="btn text-[#FFFFFF] bg-[#23BE0A]">Login</button>
-                </Link>
-                <Link to="/register">
-                    <button className="btn text-[#FFFFFF] bg-[#59C6D2]">Register</button>
-                </Link>
             </div>
         </div>
     );

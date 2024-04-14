@@ -57,7 +57,10 @@ const Login = () => {
             </form>
             <p className="text-center mt-4">Do not have an account
                 <Link className="text-blue-600 font-bold" to="/register"> Register</Link> </p>
-            <SocialLogIn></SocialLogIn>
+            <div className="md:w-3/4 lg:w-1/2 mx-auto">
+                <SocialLogIn ></SocialLogIn>
+            </div>
+
         </div>
 
     );
