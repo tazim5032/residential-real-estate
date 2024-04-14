@@ -1,5 +1,6 @@
 import { CiLocationOn } from "react-icons/ci";
 import { IoPricetagsOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 const Card = ({ card }) => {
     const { id, estate_title, segment_name, description, price, status,
         area, location, facilities, image_url } = card;
@@ -47,9 +48,11 @@ const Card = ({ card }) => {
                 <div className='border border-dashed border-[#13131326] w-full'></div>
 
 
-
+            
                 <div className="card-actions justify-end">
-                    <button className="btn btn-secondary">View Property</button>
+                <Link to={`/details/${id}`}  className="text-[#FFFFFF] text-xs 
+                font-medium p-2 rounded-xl mt-4 bg-[#23BE0A]">
+                    View Details</Link>
                     <button className="btn bg-green-600">Add to Watchlist</button>
 
                 </div>
