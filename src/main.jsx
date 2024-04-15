@@ -55,6 +55,7 @@ const router = createBrowserRouter([
         element: <PrivateRoute>
           <WatchList></WatchList>
         </PrivateRoute>,
+        loader: () => fetch('/agent.json'),
       },
       {
         path: '/update',

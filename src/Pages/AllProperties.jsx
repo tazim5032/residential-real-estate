@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Card from "../Card";
-import Footer from "../Footer";
+
 
 const AllProperties = () => {
 

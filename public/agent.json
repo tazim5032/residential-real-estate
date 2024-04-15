@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "photoUrl": "https://i.ibb.co/93RbmGJ/agent1.png",
+        "experienceDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nulla sed quam rhoncus feugiat.",
+        "rating": 4.8,
+        "email": "john.doe@example.com",
+        "phone": "+1234567890",
+        "facebook": "https://www.facebook.com/johndoe",
+        "linkedin": "https://www.linkedin.com/in/johndoe"
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "photoUrl": "https://i.ibb.co/mDVdJbx/agent2.png",
+        "experienceDetails": "Nulla facilisi. Donec id mi nec risus posuere eleifend. Mauris id malesuada nisi.",
+        "rating": 4.5,
+        "email": "jane.smith@example.com",
+        "phone": "+9876543210",
+        "facebook": "https://www.facebook.com/janesmith",
+        "linkedin": "https://www.linkedin.com/in/janesmith"
+    },
+    {
+        "id": 3,
+        "name": "Michael Johnson",
+        "photoUrl": "https://i.ibb.co/Twk7pxJ/agent3.png",
+        "experienceDetails": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis in commodo ligula.",
+        "rating": 4.9,
+        "email": "michael.johnson@example.com",
+        "phone": "+1122334455",
+        "facebook": "https://www.facebook.com/michaeljohnson",
+        "linkedin": "https://www.linkedin.com/in/michaeljohnson"
+    }
+]

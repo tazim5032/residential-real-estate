@@ -20,7 +20,7 @@ const Navbar = () => {
                         <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold border border-green-500 p-2 sm:mr-2 rounded' : 'font-bold p-2 sm:mr-2 rounded'} to="/properties"><a>Properties</a></NavLink>
 
 
-                        <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold border border-green-500 p-2 sm:mr-2 rounded' : 'font-bold p-2 sm:mr-2 rounded'} to="/watchlist"><a>Watchlist</a></NavLink>
+                        <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold border border-green-500 p-2 sm:mr-2 rounded' : 'font-bold p-2 sm:mr-2 rounded'} to="/watchlist"><a>Agents</a></NavLink>
 
 
 
@@ -42,7 +42,7 @@ const Navbar = () => {
                     <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold border border-green-500 p-2 sm:mr-2 rounded' : 'font-bold p-2 sm:mr-2 rounded'} to="/properties"><a>Properties</a></NavLink>
 
 
-                    <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold border border-green-500 p-2 sm:mr-2 rounded' : 'font-bold p-2 sm:mr-2 rounded'} to="/watchlist"><a>Watchlist</a></NavLink>
+                    <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold border border-green-500 p-2 sm:mr-2 rounded' : 'font-bold p-2 sm:mr-2 rounded'} to="/watchlist"><a>Agents</a></NavLink>
 
 
                     <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold border border-green-500 p-2 sm:mr-2 rounded' : 'font-bold p-2 sm:mr-2 rounded'} to="/contact"><a>Contact</a></NavLink>
@@ -53,7 +53,12 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-1 text-center" style={{ zIndex: 10 }}>
-                <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] border border-green-500 p-2 sm:mr-2 rounded' : 'p-2 sm:mr-2 rounded'} to="/update"><a>Update Profile</a></NavLink>
+                {
+                    user?.email ? <NavLink className={({ isActive }) => isActive ?
+                     'text-[#23BE0A] border border-green-500 p-2 sm:mr-2 rounded' : 'p-2 sm:mr-2 rounded'} to="/update">
+                        <a>Update Profile</a></NavLink>:
+                        <a></a>
+                }
                 {
                     user?.email ? <div className="dropdown dropdown-end">
                         <label tabIndex={0}

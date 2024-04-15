@@ -15,29 +15,38 @@ const Register = () => {
     } = useForm()
 
     const navigate = useNavigate();
-    const from =  '/';
+    const from = '/';
 
     const onSubmit = (data) => {
-        //create user and update profile
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+        if (!passwordRegex.test(data.password)) {
+            // Password doesn't meet requirements
+            Swal.fire({
+                icon: 'error',
+                title: 'Password Format is not matched',
+                text: 'Password must contain at least one upper and one lower case letter, and be at least 6 characters long!',
+            });
+            return;
+        }
+
+        // Password meets requirements, proceed with user creation and profile update
         createUser(data.email, data.password, data.fullName, data.photo)
             .then(() => {
                 updateUserProfile(data.fullName, data.photo)
                     .then(() => {
-
                         navigate(from);
                         Swal.fire({
                             icon: 'success',
                             title: 'Congrats',
                             text: 'Registration Successful!',
                         });
-
-                    })
-
+                    });
             })
             .catch(error => {
                 console.error(error);
-            })
+            });
     }
+
 
     return (
         <div className="bg-cyan-50 mx-[1%] md:mx[10%] lg:mx-[20%] rounded-xl">
@@ -84,7 +93,7 @@ const Register = () => {
                         {...register("password", { required: true })}
                     />
                     {errors.password && <span className="text-red-600">Password is Required</span>}
-                    
+
                 </div>
                 <div className="form-control mt-6">
                     <button className="btn bg-black text-white font-bold text-xl">Register</button>
