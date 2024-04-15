@@ -15,7 +15,7 @@ const Register = () => {
     } = useForm()
 
     const navigate = useNavigate();
-    const from = '/';
+    const from = '/login';
 
     const onSubmit = (data) => {
         const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
