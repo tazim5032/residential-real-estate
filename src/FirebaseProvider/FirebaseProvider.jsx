@@ -13,6 +13,7 @@ const githubProvider = new GithubAuthProvider();
 
 //social auth provider
 const FirebaseProvider = ({ children }) => {
+    
 
     const [user, setUser] = useState(null);
     //console.log(user);
