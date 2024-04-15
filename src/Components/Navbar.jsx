@@ -53,7 +53,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-1 text-center" style={{ zIndex: 10 }}>
-            <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] border border-green-500 p-2 sm:mr-2 rounded' : 'p-2 sm:mr-2 rounded'} to="/update"><a>Update Profile</a></NavLink>
+                <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] border border-green-500 p-2 sm:mr-2 rounded' : 'p-2 sm:mr-2 rounded'} to="/update"><a>Update Profile</a></NavLink>
                 {
                     user?.email ? <div className="dropdown dropdown-end">
                         <label tabIndex={0}
@@ -65,12 +65,15 @@ const Navbar = () => {
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3
                         z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li>
-                                <button className="btn btn-sm btn-ghost bg-cyan-200">{user?.displayName || 'user name not found'}</button>
+                                <button className="btn btn-sm btn-ghost bg-cyan-200">
+                                    {user?.displayName ? user.displayName.split(' ')[0] : 'User name not found'}
+                                </button>
                             </li>
+
                             <li>
                                 <button
                                     onClick={logout}
-                                 className="btn btn-sm btn-ghost bg-cyan-200 mt-2">Logout</button>
+                                    className="btn btn-sm btn-ghost bg-cyan-200 mt-2">Logout</button>
                             </li>
                         </ul>
                     </div>
@@ -80,8 +83,8 @@ const Navbar = () => {
                         </Link>
                 }
 
-                
-                
+
+
             </div>
         </div>
     );

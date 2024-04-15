@@ -14,6 +14,10 @@ import AllProperties from './Pages/AllProperties';
 import Details from './Pages/Details';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import UpdateUser from './Pages/UpdateUser';
+import Contact from './Pages/Contact';
+import About from './Pages/About';
+import WatchList from './Pages/WatchList';
+
 
 const router = createBrowserRouter([
   {
@@ -40,16 +44,30 @@ const router = createBrowserRouter([
         loader: () => fetch('/data.json'),
       },
       {
-        path: '/details/:resid',
+        path: '/details/:id',
         element: <PrivateRoute>
           <Details></Details>
         </PrivateRoute>,
         loader: () => fetch('/data.json'),
       },
       {
+        path: '/watchlist',
+        element: <PrivateRoute>
+          <WatchList></WatchList>
+        </PrivateRoute>,
+      },
+      {
         path: '/update',
         element: <UpdateUser></UpdateUser>
       },
+      {
+        path: '/contact',
+        element: <Contact></Contact>
+      },
+      {
+        path: '/about',
+        element: <About></About>
+      }
 
 
     ]

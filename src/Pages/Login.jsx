@@ -2,6 +2,9 @@ import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogIn from "../Components/SocialLogIn";
 import UseAuth from "../Hook/UseAuth";
+import toast from 'react-hot-toast';
+import Swal from "sweetalert2";
+
 
 const Login = () => {
     const { signInUser } = UseAuth();
@@ -16,17 +19,36 @@ const Login = () => {
     const location = useLocation();
     const from = location?.state || '/';
 
-    const onSubmit = (data) => {
+    const onSubmit =  (data) => {
         const { email, password } = data;
 
         signInUser(email, password)
             .then(result => {
+                
                 if (result.user) {
                     navigate(from);
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Congrats',
+                        text: 'Login Successful!',
+                    });
                 }
+                else{
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Invalid email or password!',
+                    });
+                }
+                
             })
             .catch(error => {
                 console.error(error);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Invalid email or password!',
+                });
             })
     }
     return (
