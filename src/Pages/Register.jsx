@@ -1,11 +1,15 @@
+import Helmet from "react-helmet";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import UseAuth from "../Hook/UseAuth";
-
+import { IoEyeOffSharp } from "react-icons/io5";
+import { FiEye } from "react-icons/fi";
+import { useState } from "react";
 const Register = () => {
 
     const { createUser, updateUserProfile } = UseAuth();
+    const [showPassword, setShowPassword] = useState(false);
     //console.log(createUser);
 
     const {
@@ -50,6 +54,9 @@ const Register = () => {
 
     return (
         <div className="bg-cyan-50 mx-[1%] md:mx[10%] lg:mx-[20%] rounded-xl">
+            <Helmet>
+                <title>Register</title>
+            </Helmet>
             <h1 className="text-2xl text-center my-10 pt-6">Please Register</h1>
 
             <form onSubmit={handleSubmit(onSubmit)} className="md:w-3/4 lg:w-1/2 mx-auto">
@@ -84,14 +91,21 @@ const Register = () => {
                     />
                     {errors.photo && <span className="text-red-600">Photo URL is Required</span>}
                 </div>
-                <div className="form-control">
+                <div className="form-control relative">
                     <label className="label">
                         <span className="label-text">Password</span>
                     </label>
-                    <input type="password" name="password" placeholder="Password"
+                    <input type={showPassword ? "text" : "password"}
+                        name="password"
+                        placeholder="Password"
                         className="input input-bordered"
                         {...register("password", { required: true })}
                     />
+                    <span className="absolute top-12 right-1" onClick={() => setShowPassword(!showPassword)}>
+                        {
+                            showPassword ? <IoEyeOffSharp></IoEyeOffSharp> : <FiEye></FiEye>
+                        }
+                    </span>
                     {errors.password && <span className="text-red-600">Password is Required</span>}
 
                 </div>

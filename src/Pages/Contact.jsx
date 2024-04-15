@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Helmet from "react-helmet";
 import Swal from 'sweetalert2';
 
 const Contact = () => {
@@ -35,6 +36,9 @@ const Contact = () => {
 
   return (
     <div className="mx-[1%] md:mx-[3%] rounded-xl mt-6">
+      <Helmet>
+        <title>Contact Us</title>
+      </Helmet>
 
       {/* Contact Form */}
       <div className="max-w-lg mx-auto p-8 bg-white rounded-lg shadow-lg mt-8">

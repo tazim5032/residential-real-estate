@@ -2,11 +2,14 @@ import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogIn from "../Components/SocialLogIn";
 import UseAuth from "../Hook/UseAuth";
-import toast from 'react-hot-toast';
 import Swal from "sweetalert2";
-
+import Helmet from "react-helmet";
+import { useState } from "react";
+import { IoEyeOffSharp } from "react-icons/io5";
+import { FiEye } from "react-icons/fi";
 
 const Login = () => {
+    const [showPassword, setShowPassword] = useState(false);
     const { signInUser } = UseAuth();
     const {
         register,
@@ -19,12 +22,12 @@ const Login = () => {
     const location = useLocation();
     const from = location?.state || '/';
 
-    const onSubmit =  (data) => {
+    const onSubmit = (data) => {
         const { email, password } = data;
 
         signInUser(email, password)
             .then(result => {
-                
+
                 if (result.user) {
                     navigate(from);
                     Swal.fire({
@@ -33,14 +36,14 @@ const Login = () => {
                         text: 'Login Successful!',
                     });
                 }
-                else{
+                else {
                     Swal.fire({
                         icon: 'error',
                         title: 'Oops...',
                         text: 'Invalid email or password!',
                     });
                 }
-                
+
             })
             .catch(error => {
                 console.error(error);
@@ -54,6 +57,9 @@ const Login = () => {
     return (
 
         <div className="bg-cyan-50 mx-[1%] md:mx[10%] lg:mx-[20%] rounded-xl">
+            <Helmet>
+                <title>Login</title>
+            </Helmet>
             <h1 className="text-2xl text-center my-10 pt-6">Please Login</h1>
 
             <form onSubmit={handleSubmit(onSubmit)} className="md:w-3/4 lg:w-1/2 mx-auto">
@@ -67,15 +73,26 @@ const Login = () => {
                     />
                     {errors.email && <span className="text-red-600">Email is Required</span>}
                 </div>
-                <div className="form-control">
+                <div className="form-control relative">
                     <label className="label">
                         <span className="label-text">Password</span>
                     </label>
-                    <input type="password" name="password" placeholder="Password"
+                    <input type={showPassword ? "text" : "password"}
+                        name="password"
+                        placeholder="Password"
                         className="input input-bordered"
                         {...register("password", { required: true })}
                     />
-                    {errors.password && <span className="text-red-600">Password is Required</span>}
+
+                    <span className="absolute top-12 right-1" onClick={ () => setShowPassword(!showPassword)}>
+                    {
+                        showPassword ? <IoEyeOffSharp></IoEyeOffSharp> : <FiEye></FiEye>
+                    }
+                    </span>
+
+                    {errors.password && <span className="text-red-600">
+                        Password is Required</span>}
+
                     <label className="label">
                         <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                     </label>

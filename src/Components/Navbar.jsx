@@ -55,16 +55,17 @@ const Navbar = () => {
             <div className="navbar-end gap-1 text-center" style={{ zIndex: 10 }}>
                 {
                     user?.email ? <NavLink className={({ isActive }) => isActive ?
-                     'text-[#23BE0A] border border-green-500 p-2 sm:mr-2 rounded' : 'p-2 sm:mr-2 rounded'} to="/update">
-                        <a>Update Profile</a></NavLink>:
+                        'text-[#23BE0A] border border-green-500 p-2 sm:mr-2 rounded' : 'p-2 sm:mr-2 rounded'} to="/update">
+                        <a>Update Profile</a></NavLink> :
                         <a></a>
                 }
                 {
                     user?.email ? <div className="dropdown dropdown-end">
                         <label tabIndex={0}
                             className="btn btn-ghost btn-circle avatar">
-                            <div className="w-10 rounded-full">
-                                <img src={user?.photoURL || "https://i.ibb.co/sjymvr8/Capture4.png"} />
+                            <div className="w-10 rounded-full" >
+                                <img 
+                                 src={user?.photoURL || "https://i.ibb.co/sjymvr8/Capture4.png"} />
                             </div>
                         </label>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3
