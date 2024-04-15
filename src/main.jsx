@@ -13,6 +13,7 @@ import FirebaseProvider from './FirebaseProvider/FirebaseProvider';
 import AllProperties from './Pages/AllProperties';
 import Details from './Pages/Details';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import UpdateUser from './Pages/UpdateUser';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
           <Details></Details>
         </PrivateRoute>,
         loader: () => fetch('/data.json'),
+      },
+      {
+        path: '/update',
+        element: <UpdateUser></UpdateUser>
       },
 
 

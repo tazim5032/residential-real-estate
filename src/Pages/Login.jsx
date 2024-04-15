@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogIn from "../Components/SocialLogIn";
 import UseAuth from "../Hook/UseAuth";
 
@@ -11,12 +11,19 @@ const Login = () => {
         formState: { errors },
     } = useForm()
 
+
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location?.state || '/';
+
     const onSubmit = (data) => {
         const { email, password } = data;
 
         signInUser(email, password)
             .then(result => {
-                console.log(result);
+                if (result.user) {
+                    navigate(from);
+                }
             })
             .catch(error => {
                 console.error(error);
@@ -24,8 +31,8 @@ const Login = () => {
     }
     return (
 
-        <div>
-            <h1 className="text-2xl text-center my-10">Please Login</h1>
+        <div className="bg-cyan-50 mx-[1%] md:mx[10%] lg:mx-[20%] rounded-xl">
+            <h1 className="text-2xl text-center my-10 pt-6">Please Login</h1>
 
             <form onSubmit={handleSubmit(onSubmit)} className="md:w-3/4 lg:w-1/2 mx-auto">
                 <div className="form-control">
@@ -57,7 +64,7 @@ const Login = () => {
             </form>
             <p className="text-center mt-4">Do not have an account
                 <Link className="text-blue-600 font-bold" to="/register"> Register</Link> </p>
-            <div className="md:w-3/4 lg:w-1/2 mx-auto">
+            <div className="md:w-3/4 lg:w-1/2 mx-auto pb-6">
                 <SocialLogIn ></SocialLogIn>
             </div>
 

@@ -1,10 +1,10 @@
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import UseAuth from "../Hook/UseAuth";
 
 const Register = () => {
 
-    const { createUser } = UseAuth();
+    const { createUser, updateUserProfile } = UseAuth();
     //console.log(createUser);
 
     const {
@@ -13,10 +13,20 @@ const Register = () => {
         formState: { errors },
     } = useForm()
 
+    const navigate = useNavigate();
+    const from =  '/';
+
     const onSubmit = (data) => {
-        createUser(data.email, data.password)
-            .then(result => {
-                console.log(result);
+        //create user and update profile
+        createUser(data.email, data.password, data.fullName, data.photo)
+            .then(() => {
+                updateUserProfile(data.fullName, data.photo)
+                    .then(() => {
+
+                        navigate(from);
+
+                    })
+
             })
             .catch(error => {
                 console.error(error);
@@ -24,8 +34,8 @@ const Register = () => {
     }
 
     return (
-        <div>
-            <h1 className="text-2xl text-center my-10">Please Register</h1>
+        <div className="bg-cyan-50 mx-[1%] md:mx[10%] lg:mx-[20%] rounded-xl">
+            <h1 className="text-2xl text-center my-10 pt-6">Please Register</h1>
 
             <form onSubmit={handleSubmit(onSubmit)} className="md:w-3/4 lg:w-1/2 mx-auto">
                 <div className="form-control">
@@ -68,15 +78,13 @@ const Register = () => {
                         {...register("password", { required: true })}
                     />
                     {errors.password && <span className="text-red-600">Password is Required</span>}
-                    <label className="label">
-                        <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                    </label>
+                    
                 </div>
                 <div className="form-control mt-6">
                     <button className="btn bg-black text-white font-bold text-xl">Register</button>
                 </div>
             </form>
-            <p className="text-center mt-4">Already have an account?
+            <p className="text-center mt-4 pb-6">Already have an account?
                 <Link className="text-blue-600 font-bold" to="/login"> Login</Link> </p>
         </div>
     );
