@@ -1,12 +1,12 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 const firebaseConfig = {
-  apiKey: "AIzaSyC0RvztaXu7QF_cjlI0YmNItVDfUh_a-Xs",
-  authDomain: "residential-b3feb.firebaseapp.com",
-  projectId: "residential-b3feb",
-  storageBucket: "residential-b3feb.appspot.com",
-  messagingSenderId: "569955106336",
-  appId: "1:569955106336:web:ab849b40deaf6d8ae64645"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase

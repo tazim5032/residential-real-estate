@@ -22,7 +22,7 @@ const UpdateUser = () => {
     const onSubmit = (data) => {
         
 
-        // Password meets requirements, proceed with user creation and profile update
+        
         
                 updateUserProfile(data.fullName, data.photo)
                     .then(() => {
