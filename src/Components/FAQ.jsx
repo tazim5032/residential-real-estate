@@ -6,34 +6,34 @@ const FAQ = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200">
                         <div className="collapse-title text-xl font-medium">
-                            Focus me to see content
+                        What amenities are available in the residential estates?
                         </div>
                         <div className="collapse-content">
-                            <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                            <p>Our residential estates offer a wide range of amenities including swimming pools, fitness centers, parks, and community centers.</p>
                         </div>
                     </div>
                     <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200">
                         <div className="collapse-title text-xl font-medium">
-                            Focus me to see content
+                        Are pets allowed in the residential estates?
                         </div>
                         <div className="collapse-content">
-                            <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                            <p>Yes, many of our residential estates are pet-friendly. However, there may be certain restrictions and guidelines in place.</p>
                         </div>
                     </div>
                     <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200">
                         <div className="collapse-title text-xl font-medium">
-                            Focus me to see content
+                        Is there security provided in the residential estates?
                         </div>
                         <div className="collapse-content">
-                            <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                            <p>Absolutely, your safety is our priority. We have 24/7 security surveillance and gated access to ensure a secure living environment.</p>
                         </div>
                     </div>
                     <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200">
                         <div className="collapse-title text-xl font-medium">
-                            Focus me to see content
+                        Can I customize my home in the residential estates?
                         </div>
                         <div className="collapse-content">
-                            <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                            <p>Depending on the estate policies, there may be options for customization. Contact our team to discuss available customization options for your new home.</p>
                         </div>
                     </div>
                 </div>

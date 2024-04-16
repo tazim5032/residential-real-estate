@@ -22,6 +22,7 @@ HavenCrest is a residential real estate website designed to help users find thei
 - **Sweet Alert:** A library for creating beautiful and customizable alerts.
 - **Swiper Slider:** A mobile touch slider library.
 - **Animate.css:** A library for adding animations to HTML elements.
+- **React Hook Form:** React Hook Form simplifies form management in React applications.
 - **Helmet:** A library for managing document head elements in React applications.
 ## Getting Started
 

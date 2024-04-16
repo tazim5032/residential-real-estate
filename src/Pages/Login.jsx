@@ -35,6 +35,8 @@ const Login = () => {
                         title: 'Congrats',
                         text: 'Login Successful!',
                     });
+                    
+                    
                 }
                 else {
                     Swal.fire({
@@ -43,6 +45,8 @@ const Login = () => {
                         text: 'Invalid email or password!',
                     });
                 }
+
+               
 
             })
             .catch(error => {
@@ -54,6 +58,14 @@ const Login = () => {
                 });
             })
     }
+
+    // useEffect(() => {
+        
+    //     location.reload();
+         
+        
+    // }, []);
+    
     return (
 
         <div className="bg-cyan-50 mx-[1%] md:mx[10%] lg:mx-[20%] rounded-xl">

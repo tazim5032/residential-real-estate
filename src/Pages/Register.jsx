@@ -8,7 +8,7 @@ import { FiEye } from "react-icons/fi";
 import { useState } from "react";
 const Register = () => {
 
-    const { createUser, updateUserProfile } = UseAuth();
+    const { createUser, updateUserProfile, logout } = UseAuth();
     const [showPassword, setShowPassword] = useState(false);
     //console.log(createUser);
 
@@ -38,13 +38,16 @@ const Register = () => {
             .then(() => {
                 updateUserProfile(data.fullName, data.photo)
                     .then(() => {
+                        logout()
                         navigate(from);
                         Swal.fire({
                             icon: 'success',
                             title: 'Congrats',
                             text: 'Registration Successful!',
                         });
+                        //location.reload();
                     });
+
             })
             .catch(error => {
                 console.error(error);

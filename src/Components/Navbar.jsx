@@ -31,7 +31,11 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl font-bold">HavenCrest</a>
+                <NavLink to="/">
+                    <a className="btn btn-ghost text-xl md:text-3xl font-bold text-blue-500 hover:text-blue-700">HavenCrest</a>
+                </NavLink>
+
+
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1" style={{ zIndex: 10 }}>
@@ -54,25 +58,25 @@ const Navbar = () => {
             </div>
             <div className="navbar-end gap-1 text-center" style={{ zIndex: 10 }}>
                 {
-                    user?.email ? <NavLink className={({ isActive }) => isActive ?
+                    user ? <NavLink className={({ isActive }) => isActive ?
                         'text-[#23BE0A] border border-green-500 p-2 sm:mr-2 rounded' : 'p-2 sm:mr-2 rounded'} to="/update">
                         <a>Update Profile</a></NavLink> :
                         <a></a>
                 }
                 {
-                    user?.email ? <div className="dropdown dropdown-end">
+                    user ? <div className="dropdown dropdown-end">
                         <label tabIndex={0}
                             className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full" >
-                                <img 
-                                 src={user?.photoURL || "https://i.ibb.co/sjymvr8/Capture4.png"} />
+                                <img
+                                    src={user?.photoURL || "https://i.ibb.co/sjymvr8/Capture4.png"} />
                             </div>
                         </label>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3
                         z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li>
                                 <button className="btn btn-sm btn-ghost bg-cyan-200">
-                                    {user?.displayName ? user.displayName.split(' ')[0] : 'User name not found'}
+                                    {user ? user.displayName : 'User name not found'}
                                 </button>
                             </li>
 

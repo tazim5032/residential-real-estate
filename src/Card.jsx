@@ -35,14 +35,9 @@ const Card = ({ card }) => {
                     text-xs font-medium
                      text-white shadow transition
                      duration-300 hover:bg-green-900">
-                        View Details
+                        View Property
                     </Link>
-                    <button className="bg-green-700 py-1 px-2 rounded 
-                    text-xs font-medium
-                     text-white shadow transition
-                     duration-300 hover:bg-green-900">
-                        Add to Watchlist
-                    </button>
+                    
                 </div>
             </div>
         </div>
