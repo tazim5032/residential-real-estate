@@ -1,4 +1,3 @@
-```markdown
 # HavenCrest - Residential Real Estate Website
 
 HavenCrest is a residential real estate website designed to help users find their dream homes and connect with top-rated agents. Built with React, Tailwind CSS, DaisyUI, React Router, and Firebase, HavenCrest offers a seamless user experience with a range of features including property listings, agent profiles, contact forms, and user authentication.
@@ -24,7 +23,6 @@ HavenCrest is a residential real estate website designed to help users find thei
 - **Swiper Slider:** A mobile touch slider library.
 - **Animate.css:** A library for adding animations to HTML elements.
 - **Helmet:** A library for managing document head elements in React applications.
-
 ## Getting Started
 
 1. **Clone the repository:**
@@ -192,4 +190,3 @@ That's it! You're now set up with React Router, Tailwind CSS, DaisyUI, and GitHu
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
