@@ -61,6 +61,7 @@ HavenCrest is a residential real estate website designed to help users find thei
    ```bash
    npm start
    ```
+
 Here are the setup steps for React Router, Tailwind CSS, DaisyUI, and GitHub:
 
 ### React Router
@@ -176,6 +177,7 @@ git push -u origin master
 ```
 
 That's it! You're now set up with React Router, Tailwind CSS, DaisyUI, and GitHub for your project. Feel free to customize and enhance your project further.
+
 ## Additional Information
 
 - Ensure that all routes requiring authentication are protected to prevent unauthorized access.
@@ -191,5 +193,3 @@ That's it! You're now set up with React Router, Tailwind CSS, DaisyUI, and GitHu
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
-
-This README provides an overview of the project, its features, technologies used, setup instructions, additional information, contributors, and licensing details. Adjust as needed to suit your project's specifics.
