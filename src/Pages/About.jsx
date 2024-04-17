@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Helmet from "react-helmet";
 import { MdHistory, MdStars, MdVisibility } from "react-icons/md";
 import { IoPeople } from "react-icons/io5";
+import 'animate.css'; // Import Animate.css
 
 const About = () => {
     const [sections] = useState([
@@ -31,22 +32,40 @@ const About = () => {
         },
     ]);
 
+    // State to track the index of the section being rendered
+    const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
+
+    useEffect(() => {
+        // If there are sections left to render
+        if (currentSectionIndex < sections.length - 1) {
+            // Set a timeout to render the next section after 1 second
+            const timeoutId = setTimeout(() => {
+                setCurrentSectionIndex(prevIndex => prevIndex + 1);
+            }, 500);
+            
+            // Cleanup function to clear timeout
+            return () => clearTimeout(timeoutId);
+        }
+    }, [currentSectionIndex, sections]);
+
     return (
         <div className="mx-[1%] md:mx-[3%] rounded-xl mt-6">
             <Helmet>
                 <title>About Us</title>
             </Helmet>
-            <div className="max-w-lg mx-auto p-8 bg-white rounded-lg shadow-lg">
+            <div className=" mx-auto p-8 bg-white rounded-lg shadow-lg">
                 <h2 className="text-3xl font-bold mb-6 text-center">About Us</h2>
-                {sections.map((section, index) => (
-                    <div key={index} className={`mb-8 ${section.color} border border-gray-300 p-6 rounded-lg transition duration-300 hover:shadow-xl hover:bg-white hover:border-blue-500 hover:text-blue-500`}>
-                        <div className="flex items-center justify-center mb-4">
-                            {section.icon}
-                            <h3 className="text-xl font-bold ml-2">{section.title}</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    {sections.slice(0, currentSectionIndex + 1).map((section, index) => (
+                        <div key={index} className={`mb-8 animate__animated animate__fadeInRight ${section.color} border border-gray-300 p-6 rounded-lg transition duration-300 hover:shadow-xl hover:bg-white hover:border-blue-500 hover:text-blue-500`}>
+                            <div className="flex items-center justify-center mb-4">
+                                {section.icon}
+                                <h3 className="text-xl font-bold ml-2">{section.title}</h3>
+                            </div>
+                            <p className="text-lg mb-4 transition duration-300 hover:text-gray-800">{section.content}</p>
                         </div>
-                        <p className="text-lg mb-4 transition duration-300 hover:text-gray-800">{section.content}</p>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     );

@@ -94,6 +94,12 @@ const Navbar = () => {
                             <button className="btn text-white bg-black">Login</button>
                         </Link>
                 }
+                {
+                   user ? <button
+                    onClick={logout}
+                    className="btn btn-medium btn-ghost bg-black text-white mt-2">Logout</button>
+                    : <a></a>
+                }
 
 
 

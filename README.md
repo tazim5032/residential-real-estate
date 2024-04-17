@@ -33,7 +33,7 @@ HavenCrest is a residential real estate website designed to help users find thei
 3. **[React Hook Form](https://github.com/react-hook-form/react-hook-form)**: Manages form state and validation in React applications using React hooks.
 4. **[React Icons](https://github.com/react-icons/react-icons)**: Provides a collection of popular icon sets as React components.
 5. **[SweetAlert2](https://github.com/sweetalert2/sweetalert2)**: Creates beautiful and customizable alert dialogs in JavaScript.
-6. **[Swiper](https://swiperjs.com/)**: A modern mobile touch slider library for web and mobile applications.
+6. **[Swiper Slider](https://swiperjs.com/)**: A modern mobile touch slider library for web and mobile applications.
 7. **[LocalForage](https://github.com/localForage/localForage)**: A storage library for web browsers, providing offline data storage.
 8. **[Match-sorter](https://github.com/kentcdodds/match-sorter)**: Sorts and filters arrays of items based on a search query.
 9. **Sort-By**: Couldn't find an official link, but it's commonly available on package registries like npm.
