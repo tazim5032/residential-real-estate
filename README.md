@@ -14,19 +14,91 @@ HavenCrest is a residential real estate website designed to help users find thei
 - **Login/Register:** Securely log in or register for an account to access exclusive features.
 - **Update Profile:** Update your profile information and personalize your experience.
 
-## Technologies Used
+Sure, here's the README file without mentioning the version numbers:
 
-- **React:** A JavaScript library for building user interfaces.
-- **Tailwind CSS:** A utility-first CSS framework for creating responsive designs.
-- **DaisyUI:** A component library for Tailwind CSS with ready-to-use UI components.
-- **React Router:** A routing library for React applications.
-- **Firebase:** A platform for building web and mobile applications, providing authentication and database services.
-- **Sweet Alert:** A library for creating beautiful and customizable alerts.
-- **React Icons:** A library for Icons. It provides necessary icons for building react applications.
-- **Swiper Slider:** A mobile touch slider library.
-- **Animate.css:** A library for adding animations to HTML elements.
-- **React Hook Form:** React Hook Form simplifies form management in React applications.
-- **Helmet:** A library for managing document head elements in React applications.
+---
+
+Here's the README file for the remaining packages:
+
+---
+
+# Packages Used in Project
+
+## 1. [daisyui](https://www.npmjs.com/package/daisyui)
+DaisyUI is a component library for Tailwind CSS with ready-to-use UI components. It provides a collection of customizable and responsive components that can be easily integrated into Tailwind CSS projects.
+
+## 2. [eslint](https://www.npmjs.com/package/eslint)
+ESLint is a popular JavaScript linter that helps identify and fix code errors, enforce coding conventions, and improve code quality. It provides customizable rules and plugins for detecting potential issues in JavaScript code.
+
+## 3. [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
+eslint-plugin-react is a plugin for ESLint that provides additional rules and configurations for working with React applications. It helps identify common issues and best practices for React development.
+
+## 4. [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+eslint-plugin-react-hooks is a plugin for ESLint that provides rules for enforcing the Rules of Hooks in React applications. It helps ensure that hooks are used correctly and consistently in React functional components.
+
+## 5. [eslint-plugin-react-refresh](https://www.npmjs.com/package/eslint-plugin-react-refresh)
+eslint-plugin-react-refresh is a plugin for ESLint that provides rules for working with React Fast Refresh. It helps detect and fix issues related to React component hot reloading and error handling.
+
+## 6. [postcss](https://www.npmjs.com/package/postcss)
+PostCSS is a tool for transforming CSS with JavaScript plugins. It provides a flexible and efficient way to process CSS, including features like autoprefixing, minification, and more.
+
+## 7. [tailwindcss](https://www.npmjs.com/package/tailwindcss)
+Tailwind CSS is a utility-first CSS framework for creating responsive designs. It provides a set of pre-defined utility classes that can be used to style HTML elements without writing custom CSS.
+
+## 8. [vite](https://www.npmjs.com/package/vite)
+Vite is a fast build tool for modern web development. It provides instant server start, hot module replacement, and blazing fast builds for JavaScript applications. Vite is commonly used with frameworks like React, Vue.js, and Svelte.
+
+---
+
+Feel free to click on the package names to view their documentation and learn more about how to use them in your project.
+
+# Packages Used in Project
+
+## 1. [animate.css](https://www.npmjs.com/package/animate.css)
+Animate.css is a library for adding animations to HTML elements. It provides a collection of pre-made CSS animations that can be easily applied to elements.
+
+## 2. [firebase](https://www.npmjs.com/package/firebase)
+Firebase is a platform for building web and mobile applications. It provides authentication, real-time database, cloud storage, and other services to developers.
+
+## 3. [localforage](https://www.npmjs.com/package/localforage)
+LocalForage is a fast and simple storage library for web browsers. It provides a consistent API for storing data offline using various storage backends.
+
+## 4. [match-sorter](https://www.npmjs.com/package/match-sorter)
+Match-sorter is a library for sorting and filtering arrays of items based on a search query. It provides flexible and customizable options for matching and sorting items.
+
+## 5. [react](https://www.npmjs.com/package/react)
+React is a JavaScript library for building user interfaces. It allows developers to create reusable UI components and manage component state efficiently.
+
+## 6. [react-dom](https://www.npmjs.com/package/react-dom)
+React-DOM is a package that provides DOM-specific methods for working with React elements. It is used for rendering React components in the browser.
+
+## 7. [react-helmet](https://www.npmjs.com/package/react-helmet)
+React-Helmet is a library for managing document head elements in React applications. It allows developers to dynamically update meta tags, titles, and other head elements.
+
+## 8. [react-hook-form](https://www.npmjs.com/package/react-hook-form)
+React Hook Form is a library for managing form state and validation in React applications. It provides a simple and efficient way to work with forms using React hooks.
+
+## 9. [react-hot-toast](https://www.npmjs.com/package/react-hot-toast)
+React Hot Toast is a library for displaying toast notifications in React applications. It provides customizable toast components that can be easily integrated into any React project.
+
+## 10. [react-icons](https://www.npmjs.com/package/react-icons)
+React Icons is a library that provides a collection of popular icon sets as React components. It allows developers to easily add icons to their React applications without the need for external libraries.
+
+## 11. [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+React Router DOM is a package that provides routing capabilities for React applications. It allows developers to define routes, handle navigation, and pass parameters between different components in the application.
+
+## 12. [sort-by](https://www.npmjs.com/package/sort-by)
+Sort-By is a small utility library for sorting arrays of objects in JavaScript. It provides a simple and efficient way to sort objects based on a specified key.
+
+## 13. [sweetalert2](https://www.npmjs.com/package/sweetalert2)
+SweetAlert2 is a library for creating beautiful and customizable alert dialogs in JavaScript. It provides a simple API for displaying alerts, confirmations, and prompts with custom styling and animations.
+
+## 14. [swiper](https://www.npmjs.com/package/swiper)
+Swiper is a modern mobile touch slider library for web and mobile applications. It provides a powerful and flexible API for creating responsive and interactive sliders, carousels, and galleries.
+
+---
+
+Feel free to click on the package names to view their documentation and learn more about how to use them in your project.
 ## Getting Started
 
 1. **Clone the repository:**
