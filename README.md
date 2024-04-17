@@ -18,10 +18,6 @@ Sure, here's the README file without mentioning the version numbers:
 
 ---
 
-Here's the README file for the remaining packages:
-
----
-
 # Packages Used in Project
 
 ## 1. [daisyui](https://www.npmjs.com/package/daisyui)
@@ -49,8 +45,6 @@ Tailwind CSS is a utility-first CSS framework for creating responsive designs. I
 Vite is a fast build tool for modern web development. It provides instant server start, hot module replacement, and blazing fast builds for JavaScript applications. Vite is commonly used with frameworks like React, Vue.js, and Svelte.
 
 ---
-
-Feel free to click on the package names to view their documentation and learn more about how to use them in your project.
 
 # Packages Used in Project
 
