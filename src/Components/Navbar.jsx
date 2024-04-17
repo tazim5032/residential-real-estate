@@ -60,7 +60,7 @@ const Navbar = () => {
                 {
                     user ? <NavLink className={({ isActive }) => isActive ?
                         'text-[#23BE0A] border border-green-500 p-2 sm:mr-2 rounded' : 'p-2 sm:mr-2 rounded'} to="/update">
-                        <a>Update Profile</a></NavLink> :
+                        <a className="font-bold">Update Profile</a></NavLink> :
                         <a></a>
                 }
                 {

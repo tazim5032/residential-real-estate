@@ -20,6 +20,7 @@ HavenCrest is a residential real estate website designed to help users find thei
 - **React Router:** A routing library for React applications.
 - **Firebase:** A platform for building web and mobile applications, providing authentication and database services.
 - **Sweet Alert:** A library for creating beautiful and customizable alerts.
+- **React Icons:** A library for Icons. It provides necessary icons for building react applications.
 - **Swiper Slider:** A mobile touch slider library.
 - **Animate.css:** A library for adding animations to HTML elements.
 - **React Hook Form:** React Hook Form simplifies form management in React applications.
@@ -185,8 +186,8 @@ That's it! You're now set up with React Router, Tailwind CSS, DaisyUI, and GitHu
 
 ## Contributors
 
-- John Doe (@johndoe)
-- Jane Smith (@janesmith)
+- Mohammad Fakhrul Islam
+- Programming Hero
 
 ## License
 

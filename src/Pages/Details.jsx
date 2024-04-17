@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 const Details = () => {
     const { id } = useParams();
-    console.log(id);
+    //console.log(id);
     const [product, setProduct] = useState(null);
 
 
@@ -22,10 +22,10 @@ const Details = () => {
         fetchProductDetails();
     }, [id]);
 
-    console.log(product)
+    //console.log(product)
 
     if (!product) {
-        return <span className="loading loading-bars loading-lg"></span>
+        return <div className="flex items-center justify-center"><div className="h-[400px] w-1/2 flex items-center justify-center"><span className="loading loading-bars loading-lg"></span></div></div>
     }
 
     return (

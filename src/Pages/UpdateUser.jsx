@@ -1,5 +1,6 @@
 import Helmet from "react-helmet";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import UseAuth from "../Hook/UseAuth";
 
@@ -16,17 +17,13 @@ const UpdateUser = () => {
         formState: { errors },
     } = useForm()
 
-   // const navigate = useNavigate();
-   // const from = '/login';
+    const navigate = useNavigate();
+   const from = '/update';
 
     const onSubmit = (data) => {
-        
-
-        
-        
                 updateUserProfile(data.fullName, data.photo)
                     .then(() => {
-                        //navigate(from);
+                        navigate(from);
                         Swal.fire({
                             icon: 'success',
                             title: 'Congrats',
@@ -59,7 +56,17 @@ const UpdateUser = () => {
                     {errors.fullName && <span className="text-red-600">Full Name is Required</span>}
                 </div>
 
-                
+                <div className="form-control">
+                    <label className="label">
+                        <span className="label-text">Email</span>
+                    </label>
+                    <input type="email" name="email" placeholder="email"
+                        className="input input-bordered"
+                        disabled
+                    />
+                   
+                </div>
+
                 <div className="form-control">
                     <label className="label">
                         <span className="label-text">Photo URL</span>
