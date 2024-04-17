@@ -66,10 +66,12 @@ const Navbar = () => {
                 {
                     user ? <div className="dropdown dropdown-end">
                         <label tabIndex={0}
-                            className="btn btn-ghost btn-circle avatar">
+                            className="btn btn-ghost btn-circle avatar"
+                            title={user?.displayName}>
                             <div className="w-10 rounded-full" >
                                 <img
-                                    src={user?.photoURL || "https://i.ibb.co/sjymvr8/Capture4.png"} />
+                                    src={user?.photoURL || 
+                                    "https://i.ibb.co/sjymvr8/Capture4.png"} />
                             </div>
                         </label>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3
