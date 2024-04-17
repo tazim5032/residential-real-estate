@@ -18,40 +18,41 @@ HavenCrest is a residential real estate website designed to help users find thei
 
 ## Packages Used in Project
 
-### Core Libraries and Tools
-1. **React:** A JavaScript library for building user interfaces.
-2. **React DOM:** Provides DOM-specific methods for working with React elements.
-3. **React Router DOM:** Provides routing capabilities for React applications.
-4. **Firebase:** A platform for building web and mobile applications, providing authentication, real-time database, and cloud storage services.
-5. **PostCSS:** A tool for transforming CSS with JavaScript plugins.
-6. **Tailwind CSS:** A utility-first CSS framework for creating responsive designs.
-7. **Vite:** A fast build tool for modern web development.
+### Core Libraries and Tools:
+1. **[React](https://reactjs.org/)**: A JavaScript library for building user interfaces.
+2. **[React DOM](https://reactjs.org/docs/react-dom.html)**: Provides DOM-specific methods for working with React elements.
+3. **[React Router DOM](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**: Provides routing capabilities for React applications.
+4. **[Firebase](https://firebase.google.com/)**: A platform for building web and mobile applications, providing authentication, real-time database, and cloud storage services.
+5. **[PostCSS](https://github.com/postcss/postcss)**: A tool for transforming CSS with JavaScript plugins.
+6. **[Tailwind CSS](https://tailwindcss.com/)**: A utility-first CSS framework for creating responsive designs.
+7. **[Vite](https://github.com/vitejs/vite)**: A fast build tool for modern web development.
 
-### Additional Libraries and Plugins
-1. **Animate.css:** A library for adding animations to HTML elements.
-2. **React Helmet:** Manages document head elements in React applications.
-3. **React Hook Form:** Manages form state and validation in React applications using React hooks.
-4. **React Icons:** Provides a collection of popular icon sets as React components.
-5. **SweetAlert2:** Creates beautiful and customizable alert dialogs in JavaScript.
-6. **Swiper:** A modern mobile touch slider library for web and mobile applications.
-7. **LocalForage:** A storage library for web browsers, providing offline data storage.
-8. **Match-sorter:** Sorts and filters arrays of items based on a search query.
-9. **Sort-By:** A utility library for sorting arrays of objects in JavaScript.
-10. **React Hot Toast:** Displays toast notifications in React applications.
+### Additional Libraries and Plugins:
+1. **[Animate.css](https://github.com/animate-css/animate.css)**: A library for adding animations to HTML elements.
+2. **[React Helmet](https://github.com/nfl/react-helmet)**: Manages document head elements in React applications.
+3. **[React Hook Form](https://github.com/react-hook-form/react-hook-form)**: Manages form state and validation in React applications using React hooks.
+4. **[React Icons](https://github.com/react-icons/react-icons)**: Provides a collection of popular icon sets as React components.
+5. **[SweetAlert2](https://github.com/sweetalert2/sweetalert2)**: Creates beautiful and customizable alert dialogs in JavaScript.
+6. **[Swiper](https://swiperjs.com/)**: A modern mobile touch slider library for web and mobile applications.
+7. **[LocalForage](https://github.com/localForage/localForage)**: A storage library for web browsers, providing offline data storage.
+8. **[Match-sorter](https://github.com/kentcdodds/match-sorter)**: Sorts and filters arrays of items based on a search query.
+9. **Sort-By**: Couldn't find an official link, but it's commonly available on package registries like npm.
+10. **[React Hot Toast](https://github.com/timolins/react-hot-toast)**: Displays toast notifications in React applications.
 
-### Development Dependencies
-1. **ESLint:** Identifies and fixes code errors, enforces coding conventions, and improves code quality.
-2. **ESLint Plugin React:** Provides additional rules and configurations for working with React applications.
-3. **ESLint Plugin React Hooks:** Provides rules for enforcing the Rules of Hooks in React applications.
-4. **ESLint Plugin React Refresh:** Provides rules for working with React Fast Refresh.
-5. **@types/react:** TypeScript types for React library.
-6. **@types/react-dom:** TypeScript types for React DOM library.
-7. **@vitejs/plugin-react:** Vite plugin for React applications.
-8. **Autoprefixer:** Automatically adds vendor prefixes to CSS rules.
+### Development Dependencies:
+1. **[ESLint](https://eslint.org/)**: Identifies and fixes code errors, enforces coding conventions, and improves code quality.
+2. **[ESLint Plugin React](https://github.com/yannickcr/eslint-plugin-react)**: Provides additional rules and configurations for working with React applications.
+3. **[ESLint Plugin React Hooks](https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks)**: Provides rules for enforcing the Rules of Hooks in React applications.
+4. **ESLint Plugin React Refresh**: Couldn't find an official link, but it's likely part of React Refresh.
+5. **[@types/react](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react)**: TypeScript types for React library.
+6. **[@types/react-dom](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react-dom)**: TypeScript types for React DOM library.
+7. **[@vitejs/plugin-react](https://github.com/vitejs/vite/tree/main/packages/plugin-react)**: Vite plugin for React applications.
+8. **[Autoprefixer](https://github.com/postcss/autoprefixer)**: Automatically adds vendor prefixes to CSS rules.
+
+These links should provide more information about each package and how to use them in your project.
 
 Click on the package names to view their documentation and learn more about how to use them in your project.
 
-This markdown provides a consolidated overview of the packages used in the project, categorized by core libraries and tools, additional libraries and plugins, and development dependencies. Each package is briefly described, and clickable links are provided for further reference.
 ## Getting Started
 
 1. **Clone the repository:**
