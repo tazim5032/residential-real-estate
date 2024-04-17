@@ -15,7 +15,7 @@ HavenCrest is a residential real estate website designed to help users find thei
 - **Update Profile:** Update your profile information and personalize your experience.
 
 ---
-```markdown
+
 ## Packages Used in Project
 
 ### Core Libraries and Tools
@@ -50,7 +50,7 @@ HavenCrest is a residential real estate website designed to help users find thei
 8. **Autoprefixer:** Automatically adds vendor prefixes to CSS rules.
 
 Click on the package names to view their documentation and learn more about how to use them in your project.
-```
+
 This markdown provides a consolidated overview of the packages used in the project, categorized by core libraries and tools, additional libraries and plugins, and development dependencies. Each package is briefly described, and clickable links are provided for further reference.
 ## Getting Started
 
