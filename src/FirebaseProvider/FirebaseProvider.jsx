@@ -60,10 +60,10 @@ const FirebaseProvider = ({ children }) => {
     //observer
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
-            if (user) {
+            //if (user) {
                 setUser(user);
                 setLoading(false);
-            }
+            //}
         });
 
         return () => unsubscribe();
