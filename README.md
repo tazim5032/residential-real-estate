@@ -4,7 +4,7 @@
 
 HavenCrest is a residential real estate website designed to help users find their dream homes and connect with top-rated agents. Built with React, Tailwind CSS, DaisyUI, React Router, and Firebase, HavenCrest offers a seamless user experience with a range of features including property listings, agent profiles, contact forms, and user authentication.
 
-## Features
+## Features & Characteristics
 
 **Features:**
 
