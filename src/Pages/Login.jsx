@@ -74,7 +74,9 @@ const Login = () => {
             </Helmet>
             <h1 className="text-2xl text-center my-10 pt-6">Please Login</h1>
 
-            <form onSubmit={handleSubmit(onSubmit)} className="md:w-3/4 lg:w-1/2 mx-auto">
+            <form onSubmit={handleSubmit(onSubmit)} className="md:w-3/4 lg:w-1/2 mx-auto"
+            data-aos="zoom-in"
+            data-aos-duration="1000">
                 <div className="form-control">
                     <label className="label">
                         <span className="label-text">Email</span>
@@ -113,9 +115,13 @@ const Login = () => {
                     <button className="btn bg-black text-white font-bold text-xl">Login</button>
                 </div>
             </form>
-            <p className="text-center mt-4">Do not have an account
+            <p className="text-center mt-4"
+            data-aos="zoom-in"
+            data-aos-duration="1000">Do not have an account
                 <Link className="text-blue-600 font-bold" to="/register"> Register</Link> </p>
-            <div className="md:w-3/4 lg:w-1/2 mx-auto pb-6">
+            <div className="md:w-3/4 lg:w-1/2 mx-auto pb-6"
+            data-aos="zoom-in"
+            data-aos-duration="1000">
                 <SocialLogIn ></SocialLogIn>
             </div>
 

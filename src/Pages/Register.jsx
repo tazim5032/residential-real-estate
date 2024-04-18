@@ -62,7 +62,9 @@ const Register = () => {
             </Helmet>
             <h1 className="text-2xl text-center my-10 pt-6">Please Register</h1>
 
-            <form onSubmit={handleSubmit(onSubmit)} className="md:w-3/4 lg:w-1/2 mx-auto">
+            <form onSubmit={handleSubmit(onSubmit)} className="md:w-3/4 lg:w-1/2 mx-auto"
+            data-aos="zoom-in"
+            data-aos-duration="1000">
                 <div className="form-control">
                     <label className="label">
                         <span className="label-text">Full Name</span>
@@ -116,8 +118,10 @@ const Register = () => {
                     <button className="btn bg-black text-white font-bold text-xl">Register</button>
                 </div>
             </form>
-            <p className="text-center mt-4 pb-6">Already have an account?
-                <Link className="text-blue-600 font-bold" to="/login"> Login</Link> </p>
+            <p className="text-center mt-4 pb-6"
+            data-aos="zoom-in"
+            data-aos-duration="1000">Already have an account?
+                <Link className="text-blue-600 font-bold" to="/login">Login</Link> </p>
         </div>
     );
 };

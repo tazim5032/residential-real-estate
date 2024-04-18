@@ -94,7 +94,9 @@ const Contact = () => {
       </div>
 
       {/* Contact Info */}
-      <div className="bg-gray-100 p-4 flex flex-col justify-center items-center mt-12">
+      <div className="bg-gray-100 p-4 flex flex-col justify-center items-center mt-12"
+      data-aos="zoom-in"
+      data-aos-duration="1500">
         <p className="text-lg font-medium text-gray-800">Contact Us</p>
         <p className="text-sm text-gray-600">123 Main Street, City, Country</p>
         <p className="text-sm text-gray-600">Phone: +123-456-7890</p>

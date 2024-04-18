@@ -45,7 +45,9 @@ const UpdateUser = () => {
             </Helmet>
             <h1 className="text-2xl text-center my-10 pt-6">Your Profile</h1>
 
-            <form onSubmit={handleSubmit(onSubmit)} className="md:w-3/4 lg:w-1/2 mx-auto">
+            <form onSubmit={handleSubmit(onSubmit)} className="md:w-3/4 lg:w-1/2 mx-auto"
+            data-aos="zoom-in"
+            data-aos-duration="1000">
                 <div className="form-control">
                     <label className="label">
                         <span className="label-text">Full Name</span>
