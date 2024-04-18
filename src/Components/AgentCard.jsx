@@ -5,7 +5,8 @@ const AgentCard = ({ card }) => {
     const { name, photoUrl, experienceDetails, rating, email, phone, facebook, linkedin } = card;
     return (
         <div className="max-w-xs bg-white shadow-lg
-         rounded-lg overflow-hidden m-4  ">
+         rounded-lg overflow-hidden m-4 "
+         data-aos="zoom-in-down" data-aos-duration="1000">
             <div className="relative">
                 <span className="absolute top-0 left-0 bg-gray-800 text-white px-2 py-1 flex items-center">
                     <FiStar className="mr-1 text-yellow-400" /> {rating}

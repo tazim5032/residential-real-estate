@@ -41,7 +41,8 @@ const Contact = () => {
       </Helmet>
 
       {/* Contact Form */}
-      <div className="max-w-lg mx-auto p-8 bg-white rounded-lg shadow-lg mt-8">
+      <div className="max-w-lg mx-auto p-8 bg-white rounded-lg shadow-lg mt-8"
+      data-aos="zoom-in-down" data-aos-duration="1000">
         <h2 className="text-2xl font-bold mb-6">Send us a Message</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">

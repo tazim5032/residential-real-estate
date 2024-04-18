@@ -55,12 +55,14 @@ const About = () => {
             </Helmet>
             <div className=" mx-auto p-8 bg-white rounded-lg shadow-lg">
                 <h2 className="text-3xl font-bold mb-6 text-center">About Us</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8"
+                data-aos="zoom-in-down" data-aos-duration="1000">
                     {sections.slice(0, currentSectionIndex + 1).map((section, index) => (
                         <div key={index} className={`mb-8 animate__animated animate__fadeInRight ${section.color} border border-gray-300 p-6 rounded-lg transition duration-300 hover:shadow-xl hover:bg-white hover:border-blue-500 hover:text-blue-500`}>
                             <div className="flex items-center justify-center mb-4">
                                 {section.icon}
-                                <h3 className="text-xl font-bold ml-2">{section.title}</h3>
+                                <h3 className="text-xl font-bold ml-2"
+                                data-aos="zoom-in-down" data-aos-delay="1000">{section.title}</h3>
                             </div>
                             <p className="text-lg mb-4 transition duration-300 hover:text-gray-800">{section.content}</p>
                         </div>

@@ -37,7 +37,7 @@ HavenCrest is a residential real estate website designed to help users find thei
 7. **[LocalForage](https://github.com/localForage/localForage)**: A storage library for web browsers, providing offline data storage.
 8. **[Match-sorter](https://github.com/kentcdodds/match-sorter)**: Sorts and filters arrays of items based on a search query.
 9. **Sort-By**: Couldn't find an official link, but it's commonly available on package registries like npm.
-10. **[React Hot Toast](https://github.com/timolins/react-hot-toast)**: Displays toast notifications in React applications.
+10. **[AOS (Animate On Scroll)](https://github.com/michalsnik/aos)**: A small library to animate elements on your webpage as you scroll
 
 ### Development Dependencies:
 1. **[ESLint](https://eslint.org/)**: Identifies and fixes code errors, enforces coding conventions, and improves code quality.

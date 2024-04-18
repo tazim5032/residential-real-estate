@@ -6,20 +6,43 @@ const Card = ({ card }) => {
     const { id, estate_title, segment_name, price, status, area, location, image_url } = card;
 
     return (
-        <div className="card transform transition duration-300 hover:scale-105 cursor-pointer rounded-lg shadow-xl hover:shadow-2xl overflow-hidden">
+        <div className="card transform 
+        transition duration-300 hover:scale-105
+         cursor-pointer rounded-lg shadow-xl
+          hover:shadow-2xl overflow-hidden"
+          data-aos="zoom-in"
+          data-aos-duration="1000">
             <div className="relative bg-gradient-to-br from-blue-500 to-indigo-600">
                 <figure className="m-0">
                     <img className="h-[180px] w-full object-cover rounded-t-lg" src={image_url} alt={estate_title} />
-                    <div className="absolute top-0 left-0 ml-2 mt-2 bg-purple-800 bg-opacity-75 text-white text-xs uppercase px-2 py-1 rounded shadow">
+                    <div className="absolute top-0 
+                    left-0 ml-2 mt-2 bg-purple-800 
+                    bg-opacity-75 text-white text-xs
+                     uppercase px-2 py-1 rounded shadow"
+                     data-aos="fade-right"
+          data-aos-delay="1000">
                         {segment_name}
                     </div>
-                    <div className="absolute top-0 right-0 mr-2 mt-2 bg-red-700 bg-opacity-75 text-white text-xs uppercase px-2 py-1 rounded shadow">
+                    <div className="absolute top-0 right-0 mr-2
+                     mt-2 bg-red-700 bg-opacity-75 
+                     text-white text-xs uppercase px-2 py-1 rounded shadow"
+                     data-aos="fade-left"
+          data-aos-delay="1000">
                         {status}
                     </div>
-                    <div className="absolute bottom-0 left-0 ml-2 mb-2 bg-green-800 bg-opacity-85 text-white text-sm px-3 py-1 rounded shadow font-serif">
+                    <div className="absolute bottom-0
+                     left-0 ml-2 mb-2 bg-green-800 
+                     bg-opacity-85 text-white 
+                     text-sm px-3 py-1 rounded shadow font-serif"
+                     data-aos="fade-right"
+          data-aos-delay="1000">
                         Area: {area} sqft
                     </div>
-                    <div className="absolute bottom-0 right-0 mr-2 mb-2 bg-blue-700 bg-opacity-85 text-white text-sm px-3 py-1 rounded shadow font-serif">
+                    <div className="absolute bottom-0 
+                    right-0 mr-2 mb-2 bg-blue-700 
+                    bg-opacity-85 text-white text-sm px-3 py-1 rounded shadow font-serif"
+                    data-aos="fade-left"
+          data-aos-delay="1000">
                         <IoPricetagsOutline className="inline mr-1" />{price}
                     </div>
                 </figure>
