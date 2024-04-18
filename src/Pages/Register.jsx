@@ -120,8 +120,8 @@ const Register = () => {
             </form>
             <p className="text-center mt-4 pb-6"
             data-aos="zoom-in"
-            data-aos-duration="1000">Already have an account?
-                <Link className="text-blue-600 font-bold" to="/login">Login</Link> </p>
+            data-aos-duration="500">Already have an account?
+                <Link className="text-blue-600 font-bold" to="/login"> Login</Link> </p>
         </div>
     );
 };

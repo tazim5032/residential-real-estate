@@ -1,5 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import UseAuth from "../Hook/UseAuth";
+import { FcGoogle } from "react-icons/fc";
+import { FaGithub } from "react-icons/fa";
 
 const SocialLogIn = () => {
     const { googleLogIn, githubLogIn } = UseAuth();
@@ -19,9 +21,9 @@ const SocialLogIn = () => {
             <div className="divider">Continue With</div>
             <div className="flex justify-around">
                 <button onClick={() => handleSocialLogin(googleLogIn)}
-                className='btn btn-primary btn-outline'>Google</button>
+                className="w-[30px] h-[30px]"><FcGoogle  className="w-[30px] h-[30px]"/></button>
                 <button onClick={() => handleSocialLogin(githubLogIn)}
-                className='btn btn-secondary btn-outline'>GitHub</button>
+                className="w-[30px] h-[30px]"><FaGithub className="w-[30px] h-[30px]" /></button>
             </div>
         </div>
     );

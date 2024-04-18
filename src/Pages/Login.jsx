@@ -117,7 +117,7 @@ const Login = () => {
             </form>
             <p className="text-center mt-4"
             data-aos="zoom-in"
-            data-aos-duration="1000">Do not have an account
+            data-aos-duration="1000">Do not have an account?
                 <Link className="text-blue-600 font-bold" to="/register"> Register</Link> </p>
             <div className="md:w-3/4 lg:w-1/2 mx-auto pb-6"
             data-aos="zoom-in"
