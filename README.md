@@ -6,14 +6,44 @@ HavenCrest is a residential real estate website designed to help users find thei
 
 ## Features
 
-- **Home:** Discover top-rated properties, view customer reviews, and explore frequently asked questions.
-- **Properties:** Browse through a wide range of available properties with detailed information.
-- **Agents:** Connect with our top-rated agents and explore their profiles to find the perfect match.
-- **Contact:** Reach out to us with your questions, feedback, or inquiries using the contact form.
-- **About:** Learn more about HavenCrest's history, mission, and vision.
-- **Login/Register:** Securely log in or register for an account to access exclusive features.
-- **Update Profile:** Update your profile information and personalize your experience.
+**Features:**
 
+1. **Home:**
+   - Discover top-rated properties
+   - View customer reviews
+   - Explore frequently asked questions
+
+2. **Properties:**
+   - Browse through a wide range of available properties
+   - Access detailed information about each property
+
+3. **Agents:**
+   - Connect with top-rated agents
+   - Explore agent profiles to find the perfect match
+
+4. **Contact:**
+   - Reach out with questions, feedback, or inquiries
+   - Utilize the contact form for easy communication
+
+5. **About:**
+   - Learn about HavenCrest's history, mission, and vision
+
+6. **Login/Register:**
+   - Securely log in or register for an account
+   - Access exclusive features and personalized experiences
+
+7. **Update Profile:**
+   - Modify profile information
+   - Personalize the user experience to better suit individual needs
+
+**Characteristics:**
+
+- User-friendly: The platform is designed with intuitive interfaces to ensure ease of use for all visitors.
+- Comprehensive: Provides extensive information on properties, agents, and the company itself, catering to various user needs.
+- Interactive: Allows users to engage with properties, agents, and the company through reviews, inquiries, and updates.
+- Secure: Implements robust security measures to protect user data and ensure safe transactions.
+- Responsive: Adapts seamlessly to different devices and screen sizes, offering a consistent experience across platforms.
+- Customizable: Offers options for users to personalize their profiles and tailor their interactions with the platform.
 ---
 
 ## Packages Used in Project
